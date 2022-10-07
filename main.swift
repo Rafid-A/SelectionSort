@@ -5,7 +5,7 @@ var unsortedIntegers = [String]()
 func readWords() -> [String] {
 var line : String?
 repeat {
-    line = readLine()
+    line = readLine()?.lowercased()
     if line != nil {
         unsortedIntegers.append(line!)
     }
